@@ -1,11 +1,24 @@
 import './Button.scss'
 
 interface ButtonProps {
-  text: string
+  text: string;
+  type?: string;
+  onClick?: () => void;
 }
 
 export const Button = (props: ButtonProps) => {
-  const { text } = props
+  const {
+    text,
+    type,
+    onClick,
+  } = props;
 
-  return <button className="pk-button pk-button--plain">{text}</button>
+  return (
+      <button
+          onClick={onClick}
+          className={`pk-button pk-button${type || '--plain'}`}
+      >
+        {text}
+      </button>
+  )
 }
