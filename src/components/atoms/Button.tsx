@@ -3,7 +3,7 @@ import './Button.scss'
 interface ButtonProps {
   text: string;
   type?: string;
-  onClick: (e: Event) => void;
+  onClick: (e: any) => void;
 }
 
 export const Button = (props: ButtonProps) => {
