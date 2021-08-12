@@ -8,14 +8,24 @@ export const ButtonsSink = () => {
 
   return (
       <>
-        <Button text="My Button 1" />
+        <Button
+            text="My Button 1"
+            onClick={(e) => console.log(e.target)}
+        />
         <Button
             text="My Button 2"
             type="--blue"
             onClick={clicked}
         />
-        <Button text="My Button 3" type="--green" />
-        <Button text="My Button 4" type="--red" />
+        <Button text="My Button 3"
+                type="--green"
+                onClick={(e) => console.log(e.target)}
+        />
+        <Button
+            text="My Button 4"
+            type="--red"
+            onClick={(e) => console.log(e.target)}
+        />
       </>
   )
 }

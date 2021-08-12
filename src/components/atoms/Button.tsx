@@ -3,7 +3,7 @@ import './Button.scss'
 interface ButtonProps {
   text: string;
   type?: string;
-  onClick?: () => void;
+  onClick: (e: Event) => void;
 }
 
 export const Button = (props: ButtonProps) => {
@@ -15,7 +15,7 @@ export const Button = (props: ButtonProps) => {
 
   return (
       <button
-          onClick={onClick}
+          onClick={(e) => onClick(e)}
           className={`pk-button pk-button${type || '--plain'}`}
       >
         {text}
