@@ -5,7 +5,9 @@ import './App.scss'
 export const App = () => {
   return (
     <>
-      <h1>Kitchensink</h1>
+      <h1>
+        Kittensink <span role="image">😺</span>
+      </h1>
       <h2>Buttons</h2>
       <ButtonsSink />
       <h2>Navigation</h2>
