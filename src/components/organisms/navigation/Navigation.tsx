@@ -1,53 +1,32 @@
 import './Navigation.scss'
+import { NavItem } from '../../atoms/navItem/NavItem'
 
 export const Navigation = () => {
   return (
     <nav className="navigation">
       <input className="drop-toggle" type="checkbox" />
       <ul className="navigation-list">
-        <li className="navigation-list__item">
-          <a href="#/">link</a>
-        </li>
-        <li>
-          <a href="#/">link</a>
+        <NavItem url="#" linkText="NavLink" />
+        <NavItem url="#" linkText="NavLink">
           <ul className="navigation-flyout-list">
-            <li>
-              <a href="#/">sub navlink</a>
-            </li>
-            <li>
-              <a href="#/">sub navlink</a>
-            </li>
-            <li>
-              <a href="#/">sub navlink</a>
-            </li>
+            <NavItem url="#" linkText="SubNavLink" />
+            <NavItem url="#" linkText="SubNavLink" />
+            <NavItem url="#" linkText="SubNavLink" />
           </ul>
-        </li>
-        <li>
-          <a href="#/">link</a>
+        </NavItem>
+        <NavItem url="#" linkText="NavLink">
           <ul className="navigation-flyout-list">
-            <li>
-              <a href="#/">sub navlink</a>
-            </li>
-            <li>
-              <a href="#/">sub navlink</a>
-            </li>
-            <li>
-              <a href="#/">sub navlink</a>
-            </li>
+            <NavItem url="#" linkText="SubNavLink" />
+            <NavItem url="#" linkText="SubNavLink" />
+            <NavItem url="#" linkText="SubNavLink" />
           </ul>
-        </li>
+        </NavItem>
         <li>
           <a href="#/">link</a>
           <ul className="navigation-flyout-list">
-            <li>
-              <a href="#/">sub navlink</a>
-            </li>
-            <li>
-              <a href="#/">sub navlink</a>
-            </li>
-            <li>
-              <a href="#/">sub navlink</a>
-            </li>
+            <NavItem url="#" linkText="SubNavLink" />
+            <NavItem url="#" linkText="SubNavLink" />
+            <NavItem url="#" linkText="SubNavLink" />
           </ul>
         </li>
       </ul>
